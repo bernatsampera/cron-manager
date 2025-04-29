@@ -13,12 +13,17 @@ A Python-based cron job manager that executes scheduled tasks and ensures the se
 ## Installation
 
 1. Clone the repository
-2. Install dependencies:
+2. Set up a virtual environment and install dependencies with uv:
+
+   ```bash
+   uv venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   uv pip install -e . # On Prod
+   uv pip install -e ".[dev]" # Local
+
    ```
-   pip install -r requirements.txt
-   ```
-3. Configure the `.env` file with your settings
-4. Configure your cron jobs in `config.json`
+
+3. Configure your cron jobs in `config.json`
 
 ## Configuration
 

@@ -4,7 +4,7 @@
       "name": "Reddit Poster",
       "url": "http://127.0.0.1:8008/local/reddit-poster",
       "notes": "This job checks the health of the server every 10 minutes",
-      "schedule": "* 10 * * * *",
+      "schedule": "* */10 * * * *",
       "method": "GET"
     }
   ],
