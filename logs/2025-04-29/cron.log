@@ -1,0 +1,99 @@
+2025-04-29 16:49:56 | INFO     | 🔴 Job: DOCKER | Status: Container is already running
+2025-04-29 16:49:56 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d5ce9d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-04-29 16:49:56 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
+2025-04-29 16:49:56 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
+2025-04-29 16:49:58 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
+2025-04-29 16:50:03 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 16:50:03 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
+2025-04-29 16:50:03 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
+2025-04-29 16:50:21 | INFO     | 🔴 Job: DOCKER | Status: Container is already running
+2025-04-29 16:50:21 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10da52910>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-04-29 16:50:21 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
+2025-04-29 16:50:21 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
+2025-04-29 16:50:23 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
+2025-04-29 16:50:39 | INFO     | 🔴 Job: DOCKER | Status: Container not running, attempting to start
+2025-04-29 16:50:39 | INFO     | 🔴 Job: DOCKER | Status: Container started successfully
+2025-04-29 16:50:39 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b9b7c10>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-04-29 16:50:39 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
+2025-04-29 16:50:39 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
+2025-04-29 16:50:41 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
+2025-04-29 16:50:46 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 16:50:46 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
+2025-04-29 16:50:46 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
+2025-04-29 16:52:01 | INFO     | 🔴 Job: DOCKER | Status: Error checking Docker container: Command '['docker', 'ps', '-q', '-f', 'name=stage_bjjgym']' returned non-zero exit status 1.
+2025-04-29 16:52:01 | INFO     | 🔴 Job: STARTUP | Status: Failed to start Docker container
+2025-04-29 16:53:44 | INFO     | 🔴 Job: DOCKER | Status: Container is already running
+2025-04-29 16:53:44 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f2a2c10>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-04-29 16:53:44 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
+2025-04-29 16:53:44 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
+2025-04-29 16:53:46 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
+2025-04-29 16:53:52 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 16:53:52 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
+2025-04-29 16:53:52 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
+2025-04-29 16:54:19 | INFO     | 🔴 Job: DOCKER | Status: Container not running, attempting to start
+2025-04-29 16:54:19 | INFO     | 🔴 Job: DOCKER | Status: Container started successfully
+2025-04-29 16:54:19 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f046a90>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-04-29 16:54:19 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
+2025-04-29 16:54:19 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
+2025-04-29 16:54:21 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
+2025-04-29 16:54:26 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 16:54:26 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
+2025-04-29 16:54:26 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
+2025-04-29 16:57:31 | INFO     | 🔴 Job: DOCKER | Status: Container exists but not running, attempting to start
+2025-04-29 16:57:33 | INFO     | 🔴 Job: DOCKER | Status: Container started successfully
+2025-04-29 16:57:33 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 16:57:33 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
+2025-04-29 16:57:46 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon not running: ERROR: Cannot connect to the Docker daemon at unix:///Users/bsampera/.docker/run/docker.sock. Is the docker daemon running?
+errors pretty printing info
+
+2025-04-29 16:57:46 | INFO     | 🔴 Job: DOCKER | Status: Docker is not available, skipping container check
+2025-04-29 16:57:46 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 16:57:46 | INFO     | 🔴 Job: STARTUP | Status: Failed to start: Docker container
+2025-04-29 16:58:10 | INFO     | 🔴 Job: DOCKER | Status: Container exists but not running, attempting to start
+2025-04-29 16:58:13 | INFO     | 🔴 Job: DOCKER | Status: Container started successfully
+2025-04-29 16:58:13 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b930ed0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-04-29 16:58:13 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
+2025-04-29 16:58:13 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
+2025-04-29 16:58:15 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
+2025-04-29 16:58:36 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon not running: ERROR: Cannot connect to the Docker daemon at unix:///Users/bsampera/.docker/run/docker.sock. Is the docker daemon running?
+errors pretty printing info
+
+2025-04-29 16:58:36 | INFO     | 🔴 Job: DOCKER | Status: Docker is not available, skipping container check
+2025-04-29 16:58:36 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f157050>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-04-29 16:58:36 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
+2025-04-29 16:58:36 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
+2025-04-29 16:58:38 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
+2025-04-29 17:02:48 | INFO     | 🔴 Job: DOCKER | Status: Waiting for Docker daemon to become available...
+2025-04-29 17:02:48 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon not running: ERROR: Cannot connect to the Docker daemon at unix:///Users/bsampera/.docker/run/docker.sock. Is the docker daemon running?
+errors pretty printing info
+
+2025-04-29 17:02:48 | INFO     | 🔴 Job: DOCKER | Status: Attempt 1/30: Docker daemon not available yet, waiting 10 seconds...
+2025-04-29 17:02:58 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon not running: ERROR: Cannot connect to the Docker daemon at unix:///Users/bsampera/.docker/run/docker.sock. Is the docker daemon running?
+errors pretty printing info
+
+2025-04-29 17:02:58 | INFO     | 🔴 Job: DOCKER | Status: Attempt 2/30: Docker daemon not available yet, waiting 10 seconds...
+2025-04-29 17:03:08 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon is now available after 3 attempts
+2025-04-29 17:03:08 | INFO     | 🔴 Job: DOCKER | Status: Container exists but not running, attempting to start
+2025-04-29 17:03:11 | INFO     | 🔴 Job: DOCKER | Status: Container started successfully
+2025-04-29 17:03:11 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10af1c850>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-04-29 17:03:11 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
+2025-04-29 17:03:11 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
+2025-04-29 17:03:13 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
+2025-04-29 17:03:18 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 17:03:18 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
+2025-04-29 17:03:18 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
+2025-04-29 17:04:14 | INFO     | 🔴 Job: DOCKER | Status: Waiting for Docker daemon to become available...
+2025-04-29 17:04:15 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon not running: ERROR: Cannot connect to the Docker daemon at unix:///Users/bsampera/.docker/run/docker.sock. Is the docker daemon running?
+errors pretty printing info
+
+2025-04-29 17:04:15 | INFO     | 🔴 Job: DOCKER | Status: Attempt 1/30: Docker daemon not available yet, waiting 10 seconds...
+2025-04-29 17:04:25 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon is now available after 2 attempts
+2025-04-29 17:04:25 | INFO     | 🔴 Job: DOCKER | Status: Container exists but not running, attempting to start
+2025-04-29 17:04:27 | INFO     | 🔴 Job: DOCKER | Status: Container started successfully
+2025-04-29 17:04:27 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f6ef9d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-04-29 17:04:27 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
+2025-04-29 17:04:27 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
+2025-04-29 17:04:29 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
+2025-04-29 17:04:34 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 17:04:34 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
+2025-04-29 17:04:34 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
