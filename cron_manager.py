@@ -25,7 +25,7 @@ class CronManager:
             response = requests.request(
                 method=job['method'],
                 url=job['url'],
-                timeout=10
+                timeout=500
             )
             
             # Only log successful jobs at debug level
@@ -57,7 +57,7 @@ class CronManager:
                         if current_time.second % interval == 0:
                             self.execute_job(job)
 
-            time.sleep(1)  # Check every second
+            # time.sleep(1)  # Check every second
 
 if __name__ == "__main__":
     manager = CronManager()
