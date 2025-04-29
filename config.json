@@ -1,0 +1,20 @@
+{
+  "jobs": [
+    {
+      "name": "test_endpoint",
+      "url": "http://127.0.0.1:8008/health",
+      "schedule": "*/10 * * * * *",
+      "method": "GET",
+      "notes": "This job checks the health of the server every 10 seconds"
+    },
+    {
+      "name": "Reddit Poster",
+      "url": "http://127.0.0.1:8008/local/reddit-poster",
+      "schedule": "*/10 * * * * *",
+      "method": "GET",
+      "notes": "This job checks the health of the server every 10 seconds"
+    }
+  ],
+  "server_check_interval": 60,
+  "log_retention_days": 7
+}

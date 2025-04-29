@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai-backend"
+version = "0.1.0"
+description = "A simple backend service for AI processing using LangGraph"
+readme = "README.md"
+requires-python = "==3.11.*"
+license = { text = "MIT" }
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+
+dependencies = [
+    "requests==2.31.0",
+    "python-crontab==3.0.0",
+    "python-dotenv==1.0.0",
+    "loguru==0.7.2"
+]
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["open_mats_finder", "graphs"]
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py" 
