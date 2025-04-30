@@ -4,9 +4,89 @@ import requests
 import subprocess
 import os
 import shutil
+import re
 from datetime import datetime
 from logger import LogManager
 from server_monitor import ServerMonitor
+
+class CronParser:
+    def __init__(self):
+        self.field_names = ['second', 'minute', 'hour', 'day', 'month', 'weekday']
+        self.field_ranges = [
+            (0, 59),   # seconds
+            (0, 59),   # minutes
+            (0, 23),   # hours
+            (1, 31),   # day of month
+            (1, 12),   # month
+            (0, 6)     # day of week (0=Sunday)
+        ]
+
+    def _parse_field(self, field, field_index):
+        """Parse a single cron field into a set of valid values."""
+        field = field.strip()
+        if field == '*':
+            return set(range(self.field_ranges[field_index][0], self.field_ranges[field_index][1] + 1))
+        
+        values = set()
+        for part in field.split(','):
+            part = part.strip()
+            
+            # Handle step values (e.g., */5)
+            if '/' in part:
+                step_part, step = part.split('/')
+                step = int(step)
+                if step_part == '*':
+                    start = self.field_ranges[field_index][0]
+                    end = self.field_ranges[field_index][1]
+                else:
+                    start = int(step_part)
+                    end = self.field_ranges[field_index][1]
+                values.update(range(start, end + 1, step))
+                continue
+            
+            # Handle ranges (e.g., 1-5)
+            if '-' in part:
+                start, end = map(int, part.split('-'))
+                values.update(range(start, end + 1))
+                continue
+            
+            # Handle single values
+            values.add(int(part))
+        
+        return values
+
+    def parse(self, expression):
+        """Parse a cron expression into a dictionary of valid values for each field."""
+        fields = expression.strip().split()
+        if len(fields) != 6:
+            raise ValueError("Cron expression must have exactly 6 fields (second minute hour day month weekday)")
+        
+        result = {}
+        for i, (field, (field_name, (min_val, max_val))) in enumerate(zip(fields, zip(self.field_names, self.field_ranges))):
+            try:
+                result[field_name] = self._parse_field(field, i)
+            except ValueError as e:
+                raise ValueError(f"Invalid value in {field_name} field: {str(e)}")
+        
+        return result
+
+    def should_run(self, expression, current_time):
+        """Check if a job should run at the given time based on its cron expression."""
+        try:
+            schedule = self.parse(expression)
+            current_values = {
+                'second': current_time.second,
+                'minute': current_time.minute,
+                'hour': current_time.hour,
+                'day': current_time.day,
+                'month': current_time.month,
+                'weekday': current_time.weekday()
+            }
+            
+            return all(current_values[field] in schedule[field] for field in self.field_names)
+        except ValueError as e:
+            print(f"Error parsing cron expression: {str(e)}")
+            return False
 
 class CronManager:
     def __init__(self):
@@ -16,6 +96,7 @@ class CronManager:
         self.docker_container_name = os.getenv('DOCKER_CONTAINER_NAME', 'stage_bjjgym')
         self.max_docker_retries = int(os.getenv('MAX_DOCKER_RETRIES', '30'))  # Default 30 retries
         self.docker_retry_delay = int(os.getenv('DOCKER_RETRY_DELAY', '10'))  # Default 10 seconds
+        self.cron_parser = CronParser()
         
         # Check server and Docker container on startup
         self._ensure_services_running()
@@ -141,7 +222,7 @@ class CronManager:
         server_running = self.server_monitor.ensure_server_running()
         
         if docker_running and server_running:
-            self.logger.log_cron_job("STARTUP", "All services started successfully")
+            self.logger.log_cron_job("DOCKER AND SERVER RUNNING", "SUCCESS")
             return True
         else:
             status = []
@@ -186,14 +267,8 @@ class CronManager:
             current_time = datetime.now()
             
             for job in self.config['jobs']:
-                # Parse the schedule (format: "*/10 * * * * *" for every 10 seconds)
-                schedule_parts = job['schedule'].split()
-                if len(schedule_parts) == 6:  # Including seconds
-                    seconds = schedule_parts[0]
-                    if seconds.startswith('*/'):
-                        interval = int(seconds[2:])
-                        if current_time.second % interval == 0:
-                            self.execute_job(job)
+                if self.cron_parser.should_run(job['schedule'], current_time):
+                    self.execute_job(job)
 
             time.sleep(1)  # Check every second
 

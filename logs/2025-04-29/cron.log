@@ -1,99 +1,429 @@
-2025-04-29 16:49:56 | INFO     | 🔴 Job: DOCKER | Status: Container is already running
-2025-04-29 16:49:56 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d5ce9d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
-2025-04-29 16:49:56 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
-2025-04-29 16:49:56 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
-2025-04-29 16:49:58 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
-2025-04-29 16:50:03 | INFO     | 🟢 Job: UP | Status: SUCCESS
-2025-04-29 16:50:03 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
-2025-04-29 16:50:03 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
-2025-04-29 16:50:21 | INFO     | 🔴 Job: DOCKER | Status: Container is already running
-2025-04-29 16:50:21 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10da52910>: Failed to establish a new connection: [Errno 61] Connection refused'))
-2025-04-29 16:50:21 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
-2025-04-29 16:50:21 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
-2025-04-29 16:50:23 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
-2025-04-29 16:50:39 | INFO     | 🔴 Job: DOCKER | Status: Container not running, attempting to start
-2025-04-29 16:50:39 | INFO     | 🔴 Job: DOCKER | Status: Container started successfully
-2025-04-29 16:50:39 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b9b7c10>: Failed to establish a new connection: [Errno 61] Connection refused'))
-2025-04-29 16:50:39 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
-2025-04-29 16:50:39 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
-2025-04-29 16:50:41 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
-2025-04-29 16:50:46 | INFO     | 🟢 Job: UP | Status: SUCCESS
-2025-04-29 16:50:46 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
-2025-04-29 16:50:46 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
-2025-04-29 16:52:01 | INFO     | 🔴 Job: DOCKER | Status: Error checking Docker container: Command '['docker', 'ps', '-q', '-f', 'name=stage_bjjgym']' returned non-zero exit status 1.
-2025-04-29 16:52:01 | INFO     | 🔴 Job: STARTUP | Status: Failed to start Docker container
-2025-04-29 16:53:44 | INFO     | 🔴 Job: DOCKER | Status: Container is already running
-2025-04-29 16:53:44 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f2a2c10>: Failed to establish a new connection: [Errno 61] Connection refused'))
-2025-04-29 16:53:44 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
-2025-04-29 16:53:44 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
-2025-04-29 16:53:46 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
-2025-04-29 16:53:52 | INFO     | 🟢 Job: UP | Status: SUCCESS
-2025-04-29 16:53:52 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
-2025-04-29 16:53:52 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
-2025-04-29 16:54:19 | INFO     | 🔴 Job: DOCKER | Status: Container not running, attempting to start
-2025-04-29 16:54:19 | INFO     | 🔴 Job: DOCKER | Status: Container started successfully
-2025-04-29 16:54:19 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f046a90>: Failed to establish a new connection: [Errno 61] Connection refused'))
-2025-04-29 16:54:19 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
-2025-04-29 16:54:19 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
-2025-04-29 16:54:21 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
-2025-04-29 16:54:26 | INFO     | 🟢 Job: UP | Status: SUCCESS
-2025-04-29 16:54:26 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
-2025-04-29 16:54:26 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
-2025-04-29 16:57:31 | INFO     | 🔴 Job: DOCKER | Status: Container exists but not running, attempting to start
-2025-04-29 16:57:33 | INFO     | 🔴 Job: DOCKER | Status: Container started successfully
-2025-04-29 16:57:33 | INFO     | 🟢 Job: UP | Status: SUCCESS
-2025-04-29 16:57:33 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
-2025-04-29 16:57:46 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon not running: ERROR: Cannot connect to the Docker daemon at unix:///Users/bsampera/.docker/run/docker.sock. Is the docker daemon running?
-errors pretty printing info
-
-2025-04-29 16:57:46 | INFO     | 🔴 Job: DOCKER | Status: Docker is not available, skipping container check
-2025-04-29 16:57:46 | INFO     | 🟢 Job: UP | Status: SUCCESS
-2025-04-29 16:57:46 | INFO     | 🔴 Job: STARTUP | Status: Failed to start: Docker container
-2025-04-29 16:58:10 | INFO     | 🔴 Job: DOCKER | Status: Container exists but not running, attempting to start
-2025-04-29 16:58:13 | INFO     | 🔴 Job: DOCKER | Status: Container started successfully
-2025-04-29 16:58:13 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b930ed0>: Failed to establish a new connection: [Errno 61] Connection refused'))
-2025-04-29 16:58:13 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
-2025-04-29 16:58:13 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
-2025-04-29 16:58:15 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
-2025-04-29 16:58:36 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon not running: ERROR: Cannot connect to the Docker daemon at unix:///Users/bsampera/.docker/run/docker.sock. Is the docker daemon running?
-errors pretty printing info
-
-2025-04-29 16:58:36 | INFO     | 🔴 Job: DOCKER | Status: Docker is not available, skipping container check
-2025-04-29 16:58:36 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f157050>: Failed to establish a new connection: [Errno 61] Connection refused'))
-2025-04-29 16:58:36 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
-2025-04-29 16:58:36 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
-2025-04-29 16:58:38 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
-2025-04-29 17:02:48 | INFO     | 🔴 Job: DOCKER | Status: Waiting for Docker daemon to become available...
-2025-04-29 17:02:48 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon not running: ERROR: Cannot connect to the Docker daemon at unix:///Users/bsampera/.docker/run/docker.sock. Is the docker daemon running?
-errors pretty printing info
-
-2025-04-29 17:02:48 | INFO     | 🔴 Job: DOCKER | Status: Attempt 1/30: Docker daemon not available yet, waiting 10 seconds...
-2025-04-29 17:02:58 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon not running: ERROR: Cannot connect to the Docker daemon at unix:///Users/bsampera/.docker/run/docker.sock. Is the docker daemon running?
-errors pretty printing info
-
-2025-04-29 17:02:58 | INFO     | 🔴 Job: DOCKER | Status: Attempt 2/30: Docker daemon not available yet, waiting 10 seconds...
-2025-04-29 17:03:08 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon is now available after 3 attempts
-2025-04-29 17:03:08 | INFO     | 🔴 Job: DOCKER | Status: Container exists but not running, attempting to start
-2025-04-29 17:03:11 | INFO     | 🔴 Job: DOCKER | Status: Container started successfully
-2025-04-29 17:03:11 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10af1c850>: Failed to establish a new connection: [Errno 61] Connection refused'))
-2025-04-29 17:03:11 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
-2025-04-29 17:03:11 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
-2025-04-29 17:03:13 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
-2025-04-29 17:03:18 | INFO     | 🟢 Job: UP | Status: SUCCESS
-2025-04-29 17:03:18 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
-2025-04-29 17:03:18 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
-2025-04-29 17:04:14 | INFO     | 🔴 Job: DOCKER | Status: Waiting for Docker daemon to become available...
-2025-04-29 17:04:15 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon not running: ERROR: Cannot connect to the Docker daemon at unix:///Users/bsampera/.docker/run/docker.sock. Is the docker daemon running?
-errors pretty printing info
-
-2025-04-29 17:04:15 | INFO     | 🔴 Job: DOCKER | Status: Attempt 1/30: Docker daemon not available yet, waiting 10 seconds...
-2025-04-29 17:04:25 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon is now available after 2 attempts
-2025-04-29 17:04:25 | INFO     | 🔴 Job: DOCKER | Status: Container exists but not running, attempting to start
-2025-04-29 17:04:27 | INFO     | 🔴 Job: DOCKER | Status: Container started successfully
-2025-04-29 17:04:27 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10f6ef9d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
-2025-04-29 17:04:27 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
-2025-04-29 17:04:27 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
-2025-04-29 17:04:29 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
-2025-04-29 17:04:34 | INFO     | 🟢 Job: UP | Status: SUCCESS
-2025-04-29 17:04:34 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
-2025-04-29 17:04:34 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
+2025-04-29 22:09:29 | INFO     | 🔴 Job: DOCKER | Status: Waiting for Docker daemon to become available...
+2025-04-29 22:09:29 | INFO     | 🔴 Job: DOCKER | Status: Docker daemon is now available after 1 attempts
+2025-04-29 22:09:29 | INFO     | 🔴 Job: DOCKER | Status: Container is already running
+2025-04-29 22:09:29 | INFO     | 🔴 Job: DOWN | Status: HTTPConnectionPool(host='127.0.0.1', port=8008): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d67dcd0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-04-29 22:09:29 | INFO     | 🔴 Job: ATTEMPTING_START | Status: Server is down, attempting to start
+2025-04-29 22:09:29 | INFO     | 🔴 Job: STARTING | Status: Starting server in /Users/bsampera/Documents/projects/ai-backend
+2025-04-29 22:09:31 | INFO     | 🟢 Job: STARTING | Status: SUCCESS
+2025-04-29 22:09:36 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:09:36 | INFO     | 🟢 Job: STARTED | Status: SUCCESS
+2025-04-29 22:09:36 | INFO     | 🔴 Job: STARTUP | Status: All services started successfully
+2025-04-29 22:09:40 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:09:40 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:09:50 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:09:50 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:09:59 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:09:59 | INFO     | 🟢 Job: Test health check 2222  | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:10:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:10:00 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:10:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:10:00 | INFO     | 🟢 Job: Test health check 2222  | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:10:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:10:00 | INFO     | 🟢 Job: Test health minute | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:10:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:10:22 | INFO     | 🟢 Job: Reddit Poster | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "result": {
+            "posts_to_process": [
+                {
+                    "post_id": "1kapdn8",
+                    "post_title": "Gyms in Amsterdam, Preferably with Morning Classes",
+                    "post_body": "I am a white belt training for a little over a year and will be traveling to Amsterdam next month for a few weeks. I am looking for gyms to drop in and train. \n\nMorning classes would work much better for my schedule, but I was having trouble finding gyms with any types of morning classes/ open mat. \nDo classes typically start later in the day in Amsterdam (my girlfriend was noticing similar schedules for yoga classes in the area as well)?\nWhen dropping in, should I look for classes only, or open mats as well?\n\nI will be staying in the city center, between the Bloemenmarkt and the Rijksmuseum. \n\nThank you!",
+                    "post_url": "https://www.reddit.com/r/bjj/comments/1kapdn8/gyms_in_amsterdam_preferably_with_morning_classes/",
+                    "is_gym_request": true,
+                    "city": "Amsterdam",
+                    "iso2": "NL",
+                    "gyms_exist": true,
+                    "city_url": "https://bjjgym.com/nl/amsterdam",
+                    "open_mat_url": "https://www.bjjgym.com/openmat/nl/amsterdam",
+                    "url_valid": true,
+                    "response": "I've got you covered. Check out this list for BJJ gyms in Amsterdam: [bjjgym.com/nl/amsterdam](https://bjjgym.com/nl/amsterdam). For open mats, see [bjjgym.com/openmat/nl/amsterdam](https://www.bjjgym.com/openmat/nl/amsterdam). Hope you find what you're looking for!"
+                }
+            ]
+        }
+    }
+}
+2025-04-29 22:10:30 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:10:30 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:10:40 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:10:40 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:10:50 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:10:50 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:10:59 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:10:59 | INFO     | 🟢 Job: Test health check 2222  | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:11:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:11:00 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:11:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:11:00 | INFO     | 🟢 Job: Test health check 2222  | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:11:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:11:00 | INFO     | 🟢 Job: Test health minute | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:11:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:11:02 | INFO     | 🟢 Job: Reddit Poster | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "result": {
+            "posts_to_process": []
+        }
+    }
+}
+2025-04-29 22:11:10 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:11:10 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:11:20 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:11:20 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:11:30 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:11:30 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:11:40 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:11:40 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:11:50 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:11:50 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:11:59 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:11:59 | INFO     | 🟢 Job: Test health check 2222  | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:12:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:12:00 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:12:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:12:00 | INFO     | 🟢 Job: Test health check 2222  | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:12:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:12:00 | INFO     | 🟢 Job: Test health minute | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:12:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:12:02 | INFO     | 🟢 Job: Reddit Poster | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "result": {
+            "posts_to_process": []
+        }
+    }
+}
+2025-04-29 22:12:10 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:12:10 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:12:20 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:12:20 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:12:30 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:12:30 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:12:40 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:12:40 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:12:50 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:12:50 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:12:59 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:12:59 | INFO     | 🟢 Job: Test health check 2222  | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:13:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:13:00 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:13:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:13:00 | INFO     | 🟢 Job: Test health check 2222  | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:13:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:13:00 | INFO     | 🟢 Job: Test health minute | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:13:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:13:02 | INFO     | 🟢 Job: Reddit Poster | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "result": {
+            "posts_to_process": []
+        }
+    }
+}
+2025-04-29 22:13:10 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:13:10 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:13:20 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:13:20 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:13:30 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:13:30 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:13:40 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:13:40 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:13:50 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:13:50 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:13:59 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:13:59 | INFO     | 🟢 Job: Test health check 2222  | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:14:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:14:00 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:14:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:14:00 | INFO     | 🟢 Job: Test health check 2222  | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:14:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:14:00 | INFO     | 🟢 Job: Test health minute | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:14:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:14:01 | INFO     | 🟢 Job: Reddit Poster | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "result": {
+            "posts_to_process": []
+        }
+    }
+}
+2025-04-29 22:14:10 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:14:10 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:14:20 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:14:20 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:14:31 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:14:31 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:14:40 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:14:40 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:14:50 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:14:50 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:14:59 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:14:59 | INFO     | 🟢 Job: Test health check 2222  | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:15:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:15:00 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:15:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:15:00 | INFO     | 🟢 Job: Test health check 2222  | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:15:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:15:00 | INFO     | 🟢 Job: Test health minute | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
+2025-04-29 22:15:00 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:15:02 | INFO     | 🟢 Job: Reddit Poster | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "result": {
+            "posts_to_process": []
+        }
+    }
+}
+2025-04-29 22:15:10 | INFO     | 🟢 Job: UP | Status: SUCCESS
+2025-04-29 22:15:10 | INFO     | 🟢 Job: Test health secccococnc | Status: 200 | Response: {
+    "status_code": 200,
+    "response": {
+        "status": "ok"
+    }
+}
