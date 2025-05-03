@@ -244,7 +244,7 @@ class CronManager:
             response = requests.request(
                 method=job['method'],
                 url=job['url'],
-                timeout=500
+                timeout=50000
             )
             
             # Only log successful jobs at debug level
