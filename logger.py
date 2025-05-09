@@ -2,6 +2,7 @@ import os
 from datetime import datetime
 from loguru import logger
 import json
+import sys # Added for stdout logging
 
 class LogManager:
     def __init__(self, log_dir="logs"):
@@ -21,7 +22,7 @@ class LogManager:
         if not os.path.exists(today_log_dir):
             os.makedirs(today_log_dir)
 
-        # Configure cron job logger with a more readable format
+        # Configure cron job logger with a more readable format for file logging
         logger.add(
             os.path.join(today_log_dir, "cron.log"),
             rotation="00:00",  # Create new file at midnight
@@ -31,6 +32,14 @@ class LogManager:
             enqueue=True,  # Thread-safe logging
             serialize=False  # Don't serialize the message
         )
+
+        # Add a handler for console output
+        # logger.add(
+        #     sys.stdout,
+        #     format="<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | <cyan>{message}</cyan>",
+        #     level="INFO",
+        #     enqueue=True
+        # )
 
         # # Configure server health logger with the same format
         # logger.add(

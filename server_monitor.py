@@ -43,8 +43,6 @@ class ServerMonitor:
             process = subprocess.Popen(
                 [self.uvicorn_path, "main:app", "--reload", "--port", "8008"],
                 cwd=self.server_dir,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
                 text=True,
                 env={
                     **os.environ,
@@ -60,8 +58,9 @@ class ServerMonitor:
             # Check if process is still running
             if process.poll() is not None:
                 # Process has terminated
-                stdout, stderr = process.communicate()
-                error_msg = f"Process terminated with code {process.returncode}. Stderr: {stderr}"
+                # Since stdout/stderr are no longer piped, we can't read them here.
+                # The error messages would have been printed directly to the console.
+                error_msg = f"Process terminated with code {process.returncode}."
                 self.logger.log_cron_job("ERROR", error_msg)
                 return False
             

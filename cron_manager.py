@@ -240,20 +240,27 @@ class CronManager:
                 self.logger.log_cron_job(job['name'], "FAILED", error="Server is not running")
                 return
             
-            # Only print to console if there's an error
             response = requests.request(
                 method=job['method'],
                 url=job['url'],
                 timeout=50000
             )
             
-            # Only log successful jobs at debug level
+            # Print response text to console for debugging
+            # print(f"Job '{job['name']}' - Status: {response.status_code}, Response Text: {response.text}")
+
+            response_data = None
+            try:
+                response_data = response.json()
+            except json.JSONDecodeError:
+                response_data = {"raw_response": response.text} # Log raw response if not JSON
+
             self.logger.log_cron_job(
                 job['name'],
                 status=response.status_code,
                 response={
                     "status_code": response.status_code,
-                    "response": response.json()
+                    "response": response_data
                 }
             )
         except Exception as e:
